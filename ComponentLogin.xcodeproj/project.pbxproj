@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3C643E3E3A1E0071669D340B /* libPods-ComponentLoginTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF29B6A0709D8254D406A06B /* libPods-ComponentLoginTests.a */; };
+		7238972320858A240036D74F /* Target_ComponentLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7238972220858A240036D74F /* Target_ComponentLogin.m */; };
+		7238972620858A4B0036D74F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7238972520858A4B0036D74F /* LoginViewController.m */; };
+		7238972A208595520036D74F /* CTMediator+ComponentLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 72389729208595520036D74F /* CTMediator+ComponentLogin.m */; };
 		727035EF20804D64009678F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 727035EE20804D64009678F1 /* AppDelegate.m */; };
 		727035F220804D64009678F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 727035F120804D64009678F1 /* ViewController.m */; };
 		727035F520804D64009678F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727035F320804D64009678F1 /* Main.storyboard */; };
@@ -43,6 +46,12 @@
 		1F59FBFCBB95FB420644C399 /* Pods-ComponentLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentLoginTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComponentLoginTests/Pods-ComponentLoginTests.release.xcconfig"; sourceTree = "<group>"; };
 		3146CB45B769E4CD4C3917D0 /* Pods-ComponentLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComponentLogin/Pods-ComponentLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		3C54D4342056FAAD5722E1D8 /* Pods-ComponentLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentLoginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComponentLoginTests/Pods-ComponentLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7238972120858A240036D74F /* Target_ComponentLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_ComponentLogin.h; sourceTree = "<group>"; };
+		7238972220858A240036D74F /* Target_ComponentLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_ComponentLogin.m; sourceTree = "<group>"; };
+		7238972420858A4B0036D74F /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7238972520858A4B0036D74F /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		72389728208595520036D74F /* CTMediator+ComponentLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+ComponentLogin.h"; sourceTree = "<group>"; };
+		72389729208595520036D74F /* CTMediator+ComponentLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+ComponentLogin.m"; sourceTree = "<group>"; };
 		727035EA20804D64009678F1 /* ComponentLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComponentLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		727035ED20804D64009678F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		727035EE20804D64009678F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +102,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7238971E208589680036D74F /* ComponentLogin */ = {
+			isa = PBXGroup;
+			children = (
+				7238971F2085898B0036D74F /* Targets */,
+				72389720208589B40036D74F /* LoginModule */,
+			);
+			path = ComponentLogin;
+			sourceTree = "<group>";
+		};
+		7238971F2085898B0036D74F /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				7238972120858A240036D74F /* Target_ComponentLogin.h */,
+				7238972220858A240036D74F /* Target_ComponentLogin.m */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		72389720208589B40036D74F /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				7238972420858A4B0036D74F /* LoginViewController.h */,
+				7238972520858A4B0036D74F /* LoginViewController.m */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		72389727208594820036D74F /* ComponentLogin_Category */ = {
+			isa = PBXGroup;
+			children = (
+				72389728208595520036D74F /* CTMediator+ComponentLogin.h */,
+				72389729208595520036D74F /* CTMediator+ComponentLogin.m */,
+			);
+			path = ComponentLogin_Category;
+			sourceTree = "<group>";
+		};
 		727035E120804D64009678F1 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +163,8 @@
 		727035EC20804D64009678F1 /* ComponentLogin */ = {
 			isa = PBXGroup;
 			children = (
+				72389727208594820036D74F /* ComponentLogin_Category */,
+				7238971E208589680036D74F /* ComponentLogin */,
 				727035ED20804D64009678F1 /* AppDelegate.h */,
 				727035EE20804D64009678F1 /* AppDelegate.m */,
 				727035F020804D64009678F1 /* ViewController.h */,
@@ -362,9 +409,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7238972320858A240036D74F /* Target_ComponentLogin.m in Sources */,
+				7238972A208595520036D74F /* CTMediator+ComponentLogin.m in Sources */,
 				727035F220804D64009678F1 /* ViewController.m in Sources */,
 				727035FD20804D65009678F1 /* main.m in Sources */,
 				727035EF20804D64009678F1 /* AppDelegate.m in Sources */,
+				7238972620858A4B0036D74F /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,7 +587,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4DSTTV3BM;
 				INFOPLIST_FILE = ComponentLogin/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuiping.ComponentLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,7 +605,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4DSTTV3BM;
 				INFOPLIST_FILE = ComponentLogin/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuiping.ComponentLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -567,7 +623,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4DSTTV3BM;
 				INFOPLIST_FILE = ComponentLoginTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuiping.ComponentLoginTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,7 +643,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4DSTTV3BM;
 				INFOPLIST_FILE = ComponentLoginTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuiping.ComponentLoginTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -598,7 +662,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4DSTTV3BM;
 				INFOPLIST_FILE = ComponentLoginUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuiping.ComponentLoginUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -613,7 +681,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4DSTTV3BM;
 				INFOPLIST_FILE = ComponentLoginUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuiping.ComponentLoginUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
