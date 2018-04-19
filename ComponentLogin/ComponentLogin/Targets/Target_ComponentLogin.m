@@ -14,6 +14,8 @@
 - (UIViewController *)Action_viewController:(NSDictionary *)params
 {
     LoginViewController *viewController = [[LoginViewController alloc] init];
+    viewController.params = params;
+    viewController.messageBlock = params[@"callback"];
     return viewController;
 }
 

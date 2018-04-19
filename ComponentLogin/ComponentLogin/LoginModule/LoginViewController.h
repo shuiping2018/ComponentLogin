@@ -10,4 +10,8 @@
 
 @interface LoginViewController : UIViewController
 
+@property (nonatomic, copy) NSDictionary * params;
+
+@property (nonatomic, copy) void (^messageBlock)(NSDictionary *info);
+
 @end

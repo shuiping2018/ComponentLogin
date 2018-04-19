@@ -103,7 +103,25 @@
 
 - (void)clickedBtn:(UIButton *)btn
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    if (_accountTextField.text.length == 0 || _passwordTextField.text.length == 0) {
+        
+        UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        }];
+        
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"账号和密码不能为空" preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:confirmAction];
+        [self presentViewController:alertController animated:YES completion:nil];
+        
+        return;
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:^{}];
+    
+    if (self.messageBlock) {
+        
+        self.messageBlock(@{@"accout":_accountTextField.text,@"password":_passwordTextField.text});
+    }
 }
 
 - (void)didReceiveMemoryWarning {

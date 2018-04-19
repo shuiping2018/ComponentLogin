@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "Target_ComponentLogin.h"
 #import "CTMediator+ComponentLogin.h"
 
 @interface ViewController ()
