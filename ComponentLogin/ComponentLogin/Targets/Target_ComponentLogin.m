@@ -8,6 +8,7 @@
 
 #import "Target_ComponentLogin.h"
 #import "LoginViewController.h"
+#import "RegisteredViewController.h"
 
 @implementation Target_ComponentLogin
 
@@ -16,6 +17,13 @@
     LoginViewController *viewController = [[LoginViewController alloc] init];
     viewController.params = params;
     viewController.messageBlock = params[@"callback"];
+    return viewController;
+}
+
+- (UIViewController *)Action_RegisteredViewController:(NSDictionary *)params
+{
+    RegisteredViewController *viewController = [[RegisteredViewController alloc] init];
+    viewController.blue = params[@"color"];
     return viewController;
 }
 

@@ -101,6 +101,30 @@
     }];
 }
 
+- (void)initButton
+{
+    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setBackgroundColor:[UIColor redColor]];
+    [btn setTitle:@"注册" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:16];
+    [btn addTarget:self action:@selector(clickedRegisteredBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.equalTo(self.passwordTextField.mas_bottom).offset(110);
+        make.left.equalTo(self.view).offset(20);
+        make.right.equalTo(self.view).offset(-20);
+        make.height.mas_equalTo(50);
+    }];
+}
+
+- (void)clickedRegisteredBtn:(UIButton *)btn
+{
+    
+}
+
 - (void)clickedBtn:(UIButton *)btn
 {
     

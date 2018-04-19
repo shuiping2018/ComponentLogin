@@ -19,6 +19,7 @@
 		727035FD20804D65009678F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 727035FC20804D65009678F1 /* main.m */; };
 		7270360720804D65009678F1 /* ComponentLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7270360620804D65009678F1 /* ComponentLoginTests.m */; };
 		7270361220804D65009678F1 /* ComponentLoginUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7270361120804D65009678F1 /* ComponentLoginUITests.m */; };
+		72829621208894BD00900C02 /* RegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72829620208894BD00900C02 /* RegisteredViewController.m */; };
 		7E984AC1F7443FA15A9A66A4 /* libPods-ComponentLoginUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F119981A87EFDB1AE498069 /* libPods-ComponentLoginUITests.a */; };
 		DB2FBEF259C1ADECF9862F5D /* libPods-ComponentLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C0A75DFC751E02BDF9AA28 /* libPods-ComponentLogin.a */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,8 @@
 		7270360D20804D65009678F1 /* ComponentLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComponentLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7270361120804D65009678F1 /* ComponentLoginUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentLoginUITests.m; sourceTree = "<group>"; };
 		7270361320804D65009678F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7282961F208894BD00900C02 /* RegisteredViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisteredViewController.h; sourceTree = "<group>"; };
+		72829620208894BD00900C02 /* RegisteredViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisteredViewController.m; sourceTree = "<group>"; };
 		ADE1748A70C9A206BFC20F34 /* Pods-ComponentLoginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentLoginUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComponentLoginUITests/Pods-ComponentLoginUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0C0A75DFC751E02BDF9AA28 /* libPods-ComponentLogin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComponentLogin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF29B6A0709D8254D406A06B /* libPods-ComponentLoginTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComponentLoginTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +128,8 @@
 			children = (
 				7238972420858A4B0036D74F /* LoginViewController.h */,
 				7238972520858A4B0036D74F /* LoginViewController.m */,
+				7282961F208894BD00900C02 /* RegisteredViewController.h */,
+				72829620208894BD00900C02 /* RegisteredViewController.m */,
 			);
 			path = LoginModule;
 			sourceTree = "<group>";
@@ -410,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7238972320858A240036D74F /* Target_ComponentLogin.m in Sources */,
+				72829621208894BD00900C02 /* RegisteredViewController.m in Sources */,
 				7238972A208595520036D74F /* CTMediator+ComponentLogin.m in Sources */,
 				727035F220804D64009678F1 /* ViewController.m in Sources */,
 				727035FD20804D65009678F1 /* main.m in Sources */,

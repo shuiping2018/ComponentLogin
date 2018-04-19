@@ -11,6 +11,7 @@ target 'ComponentLogin' do
   # Pods for ComponentLogin
   pod 'Masonry', '~> 1.1.0'
   pod 'CTMediator'
+#  pod 'ComponentLogin_Category', :path =>'~/Desktop/ComponentLogin_Category/'
 
   target 'ComponentLoginTests' do
     inherit! :search_paths
